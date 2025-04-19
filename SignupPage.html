@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(3, 6, 75); 
+            margin: 0;          
+            padding: 0;
+        }
+
+        .parent{
+             
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .card{
+            
+             margin-top: 30vh;
+            background-color: rgba(149, 146, 129, 0.247);
+            width: 60vh;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h2{
+             margin-top: 1vh;
+            margin-bottom: 5vh;
+            color: whitesmoke;
+            font-size: 6vh;
+        }
+
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        input{
+            /* border: 1px solid black; */
+            /* border-radius: 2px; */
+            margin: 0.5vh;
+            /* padding: .1vh; */
+            font-size: 3vh;
+           width: 43.5vh;
+        }
+
+        input::placeholder{
+            color :rgb(3, 6, 75);
+            opacity: 0.5;
+            /* padding: .5vh; */
+        }
+        button{
+            background-color: rgb(3, 6, 75);
+            color: white;
+            margin-top: 2vh;  
+            font-size: 3vh;
+            border-style:outset ;
+           
+        }
+
+        .name{
+            display: flex;
+        }
+
+        .inname{
+            width: 20vh;
+        }
+
+
+</style>
+
+</head>
+<body>
+    <div class="parent">
+
+        <div class="card">
+            <h2>Sign-Up</h2>
+            
+            <form>
+                
+                <input type="email" name="email" id="email" placeholder="Email" >
+                <div class="name">
+                    <input class="inname" type="text" name="firstname" id="firstname" placeholder="First Name" >
+                    <input class="inname" type="text" name="lastname" id="lastname" placeholder="Last Name" >
+                </div>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <button type="submit">Sign-up</button>
+            </form>
+        </div>
+    </div>
+    </body>
+</html>
